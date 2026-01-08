@@ -5,7 +5,7 @@ import { RegularTicket } from "./models/regularTicket.js";
 
 
 
-const studentP = new StudentPassenger("shay", "208795658", 0, "IDF")
+const studentP = new StudentPassenger("shay", "208795658", 1111, "IDF")
 const regularT = new RegularTicket(50, "shay")
 
 
@@ -16,6 +16,7 @@ test.describe("Ticket Purchase", ()=>{
         assert.deepStrictEqual(studentP.buyTicket(regularT), true)
     })
     test("Enough money", ()=>{
-        assert.deepStrictEqual(studentP.name === regularT.ownerName, true)
+        assert.deepStrictEqual(studentP.name , "shay")
+        assert.deepStrictEqual(regularT.ownerName , "shay")
     })
 })
