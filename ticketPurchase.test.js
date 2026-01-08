@@ -16,6 +16,6 @@ test.describe("Ticket Purchase", ()=>{
         assert.deepStrictEqual(studentP.buyTicket(regularT), true)
     })
     test("Enough money", ()=>{
-        assert.deepStrictEqual(studentP.name === regularT.ownerName)
+        assert.deepStrictEqual(studentP.name === regularT.ownerName, true)
     })
 })
