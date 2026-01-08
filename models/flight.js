@@ -17,11 +17,11 @@ export class Flight {
     }
      addTtoList(){
         
-        for (let i = 0; i < this.ticketsList.this.maximumNumberOfPassengers * 0.9; i++) {
+        for (let i = 0; i < this.maximumNumberOfPassengers * 0.9; i++) {
             this.ticketsList.push(new RegularTicket(100, ""))
             
         }
-        for (let i = 0; i < this.ticketsList.this.maximumNumberOfPassengers * 0.1; i++) {
+        for (let i = 0; i < this.maximumNumberOfPassengers * 0.1; i++) {
             this.ticketsList.push(new VIPTicket("", 100, "", []))
             
         }
